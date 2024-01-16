@@ -37,7 +37,7 @@ jobs:
       - name: Install yarn
         uses: borales/actions-yarn@v4
         with:
-          cmd: install --immutable
+          cmd: install
 
       - name: Build
         run: yarn build:lib
