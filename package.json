@@ -4,23 +4,19 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-    "dev": "VITE_CJS_TRACE=true storybook dev -p 8000",
+    "dev": "storybook dev -p 8000",
     "build": "storybook build",
     "lint": "eslint . --ext js,jsx --report-unused-disable-directives --max-warnings 0"
   },
-  "dependencies": {
-    "react": "^18.2.0",
-    "react-dom": "^18.2.0"
-  },
   "devDependencies": {
-    "@storybook/addon-essentials": "^7.6.8",
-    "@storybook/addon-interactions": "^7.6.8",
-    "@storybook/addon-links": "^7.6.8",
+    "@storybook/addon-essentials": "^8.0.0-alpha.10",
+    "@storybook/addon-interactions": "^8.0.0-alpha.10",
+    "@storybook/addon-links": "^8.0.0-alpha.10",
     "@storybook/addon-onboarding": "^1.0.10",
-    "@storybook/blocks": "^7.6.8",
-    "@storybook/react": "^7.6.8",
-    "@storybook/react-vite": "^7.6.8",
-    "@storybook/test": "^7.6.8",
+    "@storybook/blocks": "^8.0.0-alpha.10",
+    "@storybook/react": "^8.0.0-alpha.10",
+    "@storybook/react-vite": "^8.0.0-alpha.10",
+    "@storybook/test": "^8.0.0-alpha.10",
     "@types/react": "^18.2.43",
     "@types/react-dom": "^18.2.17",
     "@vitejs/plugin-react-swc": "^3.5.0",
@@ -30,7 +26,12 @@
     "eslint-plugin-react-refresh": "^0.4.5",
     "eslint-plugin-storybook": "^0.6.15",
     "prop-types": "^15.8.1",
-    "storybook": "^7.6.8",
+    "storybook": "^8.0.0-alpha.10",
     "vite": "^5.0.8"
-  }
+  },
+  "peerDependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "packageManager": "yarn@4.0.2"
 }
