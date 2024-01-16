@@ -12,7 +12,7 @@
 
 - **v1 - New Dawn**
   - ~~Setup Storybook~~
-  - Figure out the best folder structure
+  - ~~Figure out a good folder structure~~
   - Add an example component
   - Push to package repository (npmjs / github npm)
   - Ensure it can be used in a test project
