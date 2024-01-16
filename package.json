@@ -3,7 +3,6 @@
   "private": false,
   "version": "0.0.8",
   "type": "module",
-  "packageManager": "yarn@4.0.2",
   "repository": {
     "type": "git",
     "url": "https://github.com/LarsGKodehode/mobius-continuum.git"
