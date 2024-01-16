@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.0.7](https://github.com/LarsGKodehode/mobius-continuum/compare/v0.0.6...v0.0.7) (2024-01-16)
+
+
+### Miscellaneous Chores
+
+* release 0.0.7 ([2b22adb](https://github.com/LarsGKodehode/mobius-continuum/commit/2b22adb734d6c72dc00639b1ac9f225a1cfb2692))
+
 ## [0.0.6](https://github.com/LarsGKodehode/mobius-continuum/compare/v0.0.5...v0.0.6) (2024-01-16)
 
 
