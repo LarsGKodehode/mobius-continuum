@@ -5,6 +5,38 @@ __metadata:
   version: 8
   cacheKey: 10c0
 
+"@LarsGKodehode/mobius-continuum@workspace:.":
+  version: 0.0.0-use.local
+  resolution: "@LarsGKodehode/mobius-continuum@workspace:."
+  dependencies:
+    "@storybook/addon-essentials": "npm:^8.0.0-alpha.10"
+    "@storybook/addon-interactions": "npm:^8.0.0-alpha.10"
+    "@storybook/addon-links": "npm:^8.0.0-alpha.10"
+    "@storybook/addon-onboarding": "npm:^1.0.10"
+    "@storybook/blocks": "npm:^8.0.0-alpha.10"
+    "@storybook/react": "npm:^8.0.0-alpha.10"
+    "@storybook/react-vite": "npm:^8.0.0-alpha.10"
+    "@storybook/test": "npm:^8.0.0-alpha.10"
+    "@types/node": "npm:^20.11.4"
+    "@types/react": "npm:^18.2.43"
+    "@types/react-dom": "npm:^18.2.17"
+    "@vitejs/plugin-react-swc": "npm:^3.5.0"
+    eslint: "npm:^8.55.0"
+    eslint-config-prettier: "npm:^9.1.0"
+    eslint-plugin-react: "npm:^7.33.2"
+    eslint-plugin-react-hooks: "npm:^4.6.0"
+    eslint-plugin-react-refresh: "npm:^0.4.5"
+    eslint-plugin-storybook: "npm:^0.6.15"
+    prettier: "npm:3.2.2"
+    prop-types: "npm:^15.8.1"
+    storybook: "npm:^8.0.0-alpha.10"
+    vite: "npm:^5.0.8"
+  peerDependencies:
+    react: ^18.2.0
+    react-dom: ^18.2.0
+  languageName: unknown
+  linkType: soft
+
 "@aashutoshrathi/word-wrap@npm:^1.2.3":
   version: 1.2.6
   resolution: "@aashutoshrathi/word-wrap@npm:1.2.6"
@@ -4609,38 +4641,6 @@ __metadata:
   checksum: 33a124960e471c25ee19280c9ce31ccc19574b566dc514fe4f4ca4c34fa8b0b57cf437671f5de380e11353ea9426213fca17687dd2ef03134fea2dbc53809fd6
   languageName: node
   linkType: hard
-
-"components-react@workspace:.":
-  version: 0.0.0-use.local
-  resolution: "components-react@workspace:."
-  dependencies:
-    "@storybook/addon-essentials": "npm:^8.0.0-alpha.10"
-    "@storybook/addon-interactions": "npm:^8.0.0-alpha.10"
-    "@storybook/addon-links": "npm:^8.0.0-alpha.10"
-    "@storybook/addon-onboarding": "npm:^1.0.10"
-    "@storybook/blocks": "npm:^8.0.0-alpha.10"
-    "@storybook/react": "npm:^8.0.0-alpha.10"
-    "@storybook/react-vite": "npm:^8.0.0-alpha.10"
-    "@storybook/test": "npm:^8.0.0-alpha.10"
-    "@types/node": "npm:^20.11.4"
-    "@types/react": "npm:^18.2.43"
-    "@types/react-dom": "npm:^18.2.17"
-    "@vitejs/plugin-react-swc": "npm:^3.5.0"
-    eslint: "npm:^8.55.0"
-    eslint-config-prettier: "npm:^9.1.0"
-    eslint-plugin-react: "npm:^7.33.2"
-    eslint-plugin-react-hooks: "npm:^4.6.0"
-    eslint-plugin-react-refresh: "npm:^0.4.5"
-    eslint-plugin-storybook: "npm:^0.6.15"
-    prettier: "npm:3.2.2"
-    prop-types: "npm:^15.8.1"
-    storybook: "npm:^8.0.0-alpha.10"
-    vite: "npm:^5.0.8"
-  peerDependencies:
-    react: ^18.2.0
-    react-dom: ^18.2.0
-  languageName: unknown
-  linkType: soft
 
 "compressible@npm:~2.0.16":
   version: 2.0.18
