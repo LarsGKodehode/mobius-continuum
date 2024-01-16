@@ -1,8 +1,25 @@
 {
-  "name": "components-react",
+  "name": "@LarsGKodehode/mobius-continuum",
   "private": true,
   "version": "0.0.0",
   "type": "module",
+  "packageManager": "yarn@4.0.2",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/LarsGKodehode/mobius-continuum"
+  },
+  "files": ["dist"],
+  "main": "./dist/my-lib.umd.cjs",
+  "module": "./dist/my-lib.js",
+  "exports": {
+    ".": {
+      "import": "./dist/mobius-continuum.js",
+      "require": "./dist/mobius-continuum.umd.cjs"
+    }
+  },
+  "engines": {
+    "node": "20"
+  },
   "scripts": {
     "dev": "storybook dev -p 8000",
     "build": "storybook build",
@@ -37,6 +54,5 @@
   "peerDependencies": {
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
-  },
-  "packageManager": "yarn@4.0.2"
+  }
 }
