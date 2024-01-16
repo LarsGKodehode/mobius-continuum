@@ -39,6 +39,8 @@ jobs:
           registry-url: 'https://npm.pkg.github.com'
           cache: 'pnpm'
         if: ${{ steps.release.outputs.releases_created }}
+        env:
+          NODE_AUTH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
       - name: CI
         run: pnpm install --frozen-lockfile
