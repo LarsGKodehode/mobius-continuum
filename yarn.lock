@@ -3514,7 +3514,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/node@npm:*":
+"@types/node@npm:*, @types/node@npm:^20.11.4":
   version: 20.11.4
   resolution: "@types/node@npm:20.11.4"
   dependencies:
@@ -4622,6 +4622,7 @@ __metadata:
     "@storybook/react": "npm:^8.0.0-alpha.10"
     "@storybook/react-vite": "npm:^8.0.0-alpha.10"
     "@storybook/test": "npm:^8.0.0-alpha.10"
+    "@types/node": "npm:^20.11.4"
     "@types/react": "npm:^18.2.43"
     "@types/react-dom": "npm:^18.2.17"
     "@vitejs/plugin-react-swc": "npm:^3.5.0"
