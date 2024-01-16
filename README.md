@@ -13,8 +13,8 @@
 - **v1 - New Dawn**
   - ~~Setup Storybook~~
   - ~~Figure out a good folder structure~~
-  - Add an example component
-  - Push to package repository (npmjs / github npm)
+  - ~~Add an example component~~
+  - Push to package repository npm.pkg.github.com
   - Ensure it can be used in a test project
   - Create Consuming instructions
   - Setup development and production branch
