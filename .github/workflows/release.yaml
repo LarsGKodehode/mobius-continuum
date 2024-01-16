@@ -1,0 +1,53 @@
+on:
+  push:
+    branches:
+      - main
+
+permissions:
+  contents: write
+  packages: write
+  pull-requests: write
+
+name: release
+jobs:
+  release-please:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Release
+        id: release
+        if: ${{ github.ref_name == 'main' }}
+        uses: google-github-actions/release-please-action@v3
+        with:
+          release-type: node
+          default-branch: main
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Checkout
+        uses: actions/checkout@v3
+        if: ${{ steps.release.outputs.releases_created }}
+
+      # Setup .npmrc file to publish to npm
+      - name: Setup Node
+        uses: actions/setup-node@v3
+        with:
+          node-version: "20.x"
+          registry-url: "https://npm.pkg.github.com"
+          cache: "yarn"
+        if: ${{ steps.release.outputs.releases_created }}
+
+      - name: Install yarn
+        uses: borales/actions-yarn@v4
+
+      - name: CI
+        run: yarn install --immutable
+        if: ${{ steps.release.outputs.releases_created }}
+
+      - name: Build
+        run: yarn build:lib
+        if: ${{ steps.release.outputs.releases_created }}
+
+      - name: Publish
+        run: yarn publish
+        if: ${{ steps.release.outputs.releases_created }}
+        env:
+          NODE_AUTH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
