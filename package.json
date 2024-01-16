@@ -8,7 +8,9 @@
     "type": "git",
     "url": "https://github.com/LarsGKodehode/mobius-continuum"
   },
-  "files": ["dist"],
+  "files": [
+    "dist"
+  ],
   "main": "./dist/my-lib.umd.cjs",
   "module": "./dist/my-lib.js",
   "exports": {
