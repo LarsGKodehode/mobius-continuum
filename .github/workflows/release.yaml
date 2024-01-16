@@ -48,6 +48,10 @@ jobs:
         run: pnpm build:lib
         if: ${{ steps.release.outputs.releases_created }}
 
+      - name: Check registry
+        run: pnpm get registry
+        if: ${{ steps.release.outputs.releases_created }}
+
       - name: Publish
         run: pnpm publish
         if: ${{ steps.release.outputs.releases_created }}
