@@ -11,7 +11,8 @@
 ## Roadmap
 
 - **v1 - New Dawn**
-  - Setup Storybook
+  - ~~Setup Storybook~~
+  - Figure out the best folder structure
   - Add an example component
   - Push to package repository (npmjs / github npm)
   - Ensure it can be used in a test project
