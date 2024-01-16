@@ -44,7 +44,7 @@ jobs:
         if: ${{ steps.release.outputs.releases_created }}
 
       - name: Publish
-        run: yarn npm publish
+        run: yarn config set _authToken ${{ secrets.GITHUB_TOKEN }} && yarn npm publish
         if: ${{ steps.release.outputs.releases_created }}
         env:
           NODE_AUTH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
